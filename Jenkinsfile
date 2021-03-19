@@ -3,11 +3,7 @@ pipeline{
         stages{
             stage('Build/Test'){
                 steps{
-                    git url: 'https://github.com/HShanks19/Spring-Penguins'
-
-                      // Run the maven build
                       sh "mvn clean package"
-                    
                 }
             }
             //stage('Deploy'){
