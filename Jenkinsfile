@@ -3,7 +3,8 @@ pipeline{
         stages{
             stage('Build/Test'){
                 steps{
-                    sh "mkdir jenkins-tutorial-test"
+                    sh 'mvn --version'
+                    
                 }
             }
             stage('Deploy'){
